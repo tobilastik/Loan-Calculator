@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Loan Calculator</title>
+</head>
+
+<body>
+   <link rel="stylesheet" href="loan.css">
+   <div class="main">
+      <p>This is your Loan Calculator, Enter Data Below</p>
+      <table>
+         <tbody>
+            <tr>
+               <td><label>Amount Of Loan(#):</label> <input id="amount" type="number" onchange="calculate();"></td>
+            </tr>
+            <tr>
+               <td><label>Annual Interest(%):</label> <input id="annual" type="number" onchange="calculate();"></td>
+            </tr>
+            <tr>
+               <td><label>Repayment Period (yrs):</label> <input id="years" type="number" onchange="calculate();"><br></td>
+            </tr>
+            <tr>
+               <td><label>Approximate Payments:</label> <button  onclick="calculate();">Calculate</button> <br></td>
+            </tr>
+            
+
+            <tr>
+               <td><label>Monthly Payment:</label> <b>$</b><span class="output" id="monthlypayment"></span></td>
+            </tr>
+            <tr>
+               <td><label>Total Payment:</label> <b>$</b><span class="output" id="totalpayment"></span> <br></td>
+            </tr>
+            <tr>
+               <td><label>Total Interest:</label> <b>$</b><span class="output" id="totalinterest"></span> <br></td>
+            </tr>
+
+         </tbody>
+      </table>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>

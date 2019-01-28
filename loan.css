@@ -1,0 +1,65 @@
+body {
+    background: url(images/paper.jpg);
+
+  }
+
+  .main {
+    background-color: #efefef;
+    width: 75%;
+    margin: 100px auto;
+    height: 100%;
+    position: relative;
+    padding: 50px;
+    border: 3px solid red;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    -webkit-animation: bgChange 3s 3s alternate infinite;
+    transition: all 2s ease;
+  }
+  
+  label{
+    display: flex;
+    float: left;
+    clear: left;
+    width: 200px;
+    text-align: right;
+    padding: 2px;
+    margin: 2px;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+}
+  button {
+      border:100;
+      color:red;
+  }
+  .approx{
+      width: 50px;
+      height: 30px;
+  }
+  
+  
+  
+  @-webkit-keyframes bgChange {
+      0% {
+         background:#24b4de; 
+      }
+
+      30%{
+          background: wheat
+      }
+      50% {
+        background:#17a928;
+      }
+      
+      100% {
+          background: darkcyan;
+      }
+  }
+
